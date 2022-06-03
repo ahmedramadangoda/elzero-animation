@@ -1,0 +1,488 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #bebebe;
+}
+
+.elzero{
+    width: 1378px;
+    height: 500px;
+    background-color:#bebebe;
+    position: relative;
+    margin: 100px 50px;
+    padding: 0px;
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    /* gap: 2px 2px; */
+}
+
+div{
+    background-color: #323234;
+    border-radius: 2px;
+}
+
+
+                                            /* Start letter < E > */
+.one{
+    grid-row: span 8;
+}
+
+.two{
+    grid-column: span 2;
+    margin-left: -2px;
+}
+
+.three{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 5;
+    transform: translateY(-30px);
+    margin-left: -2px;
+}
+
+.four{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 8;
+    margin-left: -2px;
+}
+
+                                            /* End letter < E > */
+                                            /* Strat letter < L > */
+
+.five{
+    grid-column-start: 4;
+    grid-row-start: 1;
+    grid-row-end: 9;
+    margin-left: 10px;
+    margin-right: -10px;
+}
+                                            /* End letter < L > */
+                                            /* Start letter < Z > */
+.six{
+    grid-column: span 4;
+    margin-left: 20px;
+}
+
+.seven{
+    grid-column-start: 7;
+    grid-row-start: 2;
+    grid-row-end: 8;
+    transform:matrix(1, 0, -0.5 , 1, -25, 0);
+}
+
+.eight{
+    grid-column-start: 5;
+    grid-column-end: span 4;
+    grid-row-start: 8;
+    margin-left: 20px;
+}
+                                            /* End letter < Z > */
+                                            /* Start letter < e > it's very hard */
+.nine{
+    grid-row-start: 1;
+    grid-row-end: 9;
+    grid-column-start: 9;
+    margin-left: 10px;
+    margin-right: -10px;
+    border-top-left-radius: 50px;
+}
+
+.ten{
+    grid-column-start: 10;
+    grid-column-end: 13;
+    grid-row-start: 8;
+}
+
+.eleven{
+    grid-column-start: 10;
+    grid-column-end: 13;
+    grid-row-start: 1;
+    border-top-right-radius: 50px;
+}
+
+.twelve{
+    grid-column-start: 12;
+    grid-row-start: 2;
+    grid-row-end: 5;
+    border-bottom-right-radius: 50px;
+}
+
+.thirteen{
+    grid-column-start: 10;
+    grid-column-end: 12;
+    grid-row-start: 4;
+}
+                                                /* End letter < e > */
+                                                /* Start letter < r > */
+.fourteen{
+    grid-column-start: 13;
+    grid-row-start: 1;
+    grid-row-end: 9;
+    margin-left: 10px;
+    margin-right: -11px;
+    border-radius: 5px;
+}
+
+.fiveteen{
+    grid-column-start: 14;
+    grid-row-start: 1;
+    grid-row-end: 5;
+    border-radius: 5px;
+    transform: skew(-25deg, 0deg);
+}
+                                                /* End letter < r > */
+                                                /* Start letter < o > */
+.sixteen{
+    grid-column-start: 16;
+    grid-column-end: 19;
+    grid-row-start: 3;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    position: relative;
+    right: 15px;
+}
+
+.seventeen{
+    grid-column-start: 18;
+    grid-row-start: 4;
+    grid-row-end: 6;
+    border-bottom-right-radius: 50px;
+    position: relative;
+    right: 15px;
+}
+
+.eighteen{
+    grid-column-start: 16;
+    grid-column-end: 18;
+    grid-row-start: 5;
+    border-bottom-left-radius: 50px;
+    position: relative;
+    right: 15px;
+}
+
+.nineteen{
+    grid-column-start: 16;
+    grid-row-start: 4;
+    position: relative;
+    right: 15px;
+}
+
+.twinty{
+    grid-column-start: 17;
+    grid-row-start: 4;
+    background-color:#bebebe;
+    border-radius: 10%;
+    transform: matrix(1.2, 0, 0, 1.2, 0, 0);
+    z-index: 3;
+    position: relative;
+    right: 15px;
+}
+
+                                                    /* End letter < o > */
+
+                                                /* Start animation in < E > */
+.animat-E{
+    background-color:transparent;
+    position: relative;
+    z-index: 2;
+    left: 75px;
+    width: 55.8px;
+    height: 50px;
+    margin: 5px;
+    border-radius: 20%;
+    animation-name: move-E;
+    animation-duration: 6s;
+    animation-timing-function:linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+    /* animation-play-state:paused; */
+}
+@keyframes move-E{   
+    0%{
+        transform: translate(0px, 0px);
+        background-color: transparent;
+    }
+    10%{
+        transform: translate(-140px, 0px);
+        background-color: #fea604;
+    }
+    20%{
+        transform: translate(-140px, 220px);
+        background-color: #fea604;
+    } 
+    30%{ 
+        transform: translate(0px, 220px);
+        background-color: #fea604;
+    }
+    40%{
+        transform: translate(-140px, 220px);
+        background-color: #fea604;
+    }
+    50%{
+        transform: translate(-140px, 440px);
+        background-color: #fea604;
+    }
+    60%{
+        transform: translate(0px, 440px);
+        background-color: #fea604;
+    }
+    70%{
+        transform: translate(-140px, 440px) rotatex(180deg);
+        background-color: #fea604;
+    }
+    80%{
+        transform: translate(-140px, 0px) rotateY(-180deg);   
+        background-color: #fea604;
+    }
+}    
+                                            /* end animation in < E > */
+                                           /* start animation in < l > */                        
+.animat-l{
+    background-color: transparent;
+    position: relative;
+    z-index: 2;
+    left: 2px;
+    width: 55.7px;
+    height: 50px;
+    margin: 5px;
+    border-radius: 20%;
+    animation-name: move-l;
+    animation-duration: 1.5s;
+    animation-delay: 5.5s;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    animation-iteration-count: 2;
+    /* animation-play-state: paused; */
+}
+
+@keyframes move-l{
+    0%{
+        transform: translateY(0px);
+        background-color: #fea604;
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(440px) rotate(180deg);
+        background-color: #fea604;
+    }
+}
+
+                                                /* end animation in < l > */
+                                                /* start animation in < Z > */
+.animat-z{
+    background-color: transparent;
+    position: relative;
+    z-index: 2;
+    left: 2px;
+    width: 55.7px;
+    height: 50px;
+    margin: 5px;
+    border-radius: 20%;
+    animation-name: move-z;
+    animation-duration: 3.5s;
+    animation-delay: 8.3s;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    animation-fill-mode:both ;
+    animation-iteration-count:1;
+    /* animation-play-state: paused; */
+}
+
+@keyframes move-z{
+    0%{
+        transform: translate(0px, 0px);
+        background-color: transparent;
+    }
+    20%{
+        transform: translate(190px, 0px);
+        background-color: #fea604;
+    }
+    40%{
+        transform: translate(190px, 25px) rotatex(180deg);
+        border-radius: 50%;
+        background-color: #fea604;
+    }
+    60%{
+        transform: translate(1px, 400px) rotatey(180deg);
+        background-color: #fea604;
+    }
+    80%{
+        transform: translate(0px, 435px);
+        background-color: #fea604;
+    }
+    100%{
+        transform: translate(188px, 437px);
+    }
+}
+
+
+                                                /* End animation in < Z > */
+                                                /* Start animation in < e > */
+.animat-e{
+    background-color: transparent;
+    position: relative;
+    z-index: 2;
+    top: 437px;
+    left: 2px;
+    width: 55.7px;
+    height: 50px;
+    margin: 5px;
+    border-radius: 20%;
+    animation-name: move-e;
+    animation-duration: 8s;
+    animation-delay: 11.7s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-fill-mode:both ;
+    animation-iteration-count:1;
+    /* animation-play-state: paused; */
+}
+
+@keyframes move-e{
+    0%{
+        transform: translate(0px, 0px) rotateY(20deg);
+        border-radius: 20%;
+        background-color: transparent;
+    }
+    10%{
+        transform: translate(199px, 0px) rotatex(160deg);
+        border-radius: 20%;
+        background-color: #fea604;
+    }
+    20%{
+        transform: translate(0px, 0px) rotatex(-100deg);
+        border-radius: 20%;
+        background-color: #fea604;
+    }
+    30%{
+        transform: translate(0px, -249px);
+        border-radius: 20%;
+        background-color: #fea604;
+    }
+    40%{
+        transform: translate(195px, -249px);
+        border-radius: 20% 20% 53px 20% ;
+        background-color: #fea604;
+    }
+    50%{
+        transform: translate(195px, -438px);
+        border-radius: 20% 53px 20% 20% ;
+        background-color: #fea604;
+    }
+    60%{
+        transform: translate(0px, -438px);
+        border-radius: 53px 20% 20% 20%;
+        background-color: #fea604;
+    }
+    70%{
+        transform: translate(195px, -438px);
+        border-radius: 20% 53px 20% 20%;
+        background-color: transparent;
+    }
+}
+                                                /* End animation in < e > */
+                                                /* Strat animation in < r > */
+.animat-r{
+    background-color: transparent;
+    position: relative;
+    z-index: 2;
+    top: 0px;
+    left: 2px;
+    width: 55.7px;
+    height: 50px;
+    margin: 5px;
+    border-radius: 20%;
+    animation-name: move-r;
+    animation-duration: 3s;
+    animation-delay: 17.3s;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    animation-fill-mode:both ;
+    animation-iteration-count:1;
+    /* animation-play-state: paused; */
+}
+
+@keyframes move-r{
+    0%{
+        transform: translate(0px, 0px);
+        background-color: transparent;
+    }
+    30%{
+        transform: translate(0px, 438px) rotate(-180deg);
+        background-color: #fea604;
+    }
+    60%{
+        transform: translate(0px, 210px);
+        background-color: #fea604;
+    }
+    90%{
+        transform: translate(94px, 20px);
+        border-radius: 50%;
+        background-color: transparent;
+    }
+}
+                                            /* End animation in < r > */
+                                            /* Strat animation in < O > */
+.animat-o{
+    background-color: transparent;
+    position: relative;
+    z-index: 2;
+    top: -2px;
+    left: -2px;
+    width: 55.7px;
+    height: 50px;
+    margin: 5px;
+    border-radius: 20%;
+    animation-name: move-o;
+    animation-duration: 3s;
+    animation-delay: 20s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-fill-mode:both ;
+    animation-iteration-count:1;
+    /* animation-play-state: paused; */
+}
+
+@keyframes move-o{
+    0%{
+        transform: translate(0px, 0px);
+        border-radius: 60px 20% 20% 20%;
+        background-color: transparent;
+    }
+    25%{
+        transform: translate(144px, 0px);
+        border-radius: 20% 60px 20% 20%;
+        background-color: #fea604;
+    }
+    50%{
+        transform: translate(145px, 130px);
+        border-radius: 20% 20% 60px 20%;
+        background-color: #fea604;
+    }
+    75%{
+        transform: translate(0px, 130px);
+        border-radius: 20% 20% 20% 60px;
+        background-color: #fea604;
+    }
+    100%{
+        transform: translate(0px, 0px);
+        border-radius: 60px 20% 20% 20%;
+        background-color: transparent;
+    }
+}
+                                                /* End animation in < O > */
+
+/* .rotate{
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    border: 5px solid;
+    border-color: red red red white;
+    border-radius: 50%;
+    transition: 5s;
+    transform: translateX(200px) rotate(200deg);
+} */
